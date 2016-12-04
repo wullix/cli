@@ -1,0 +1,40 @@
+{
+    "name": "wullix/cli",
+	"type": "library",
+    "description": "Wullix Power",
+    "keywords": ["Wullix framework"],
+    "homepage": "http://framwork.wullix.com/",
+    "license": "",
+    "config": {
+        "secure-http":false
+    },
+    "authors": [
+        {
+            "name": "François Schmitt",
+            "email": "fschmitt@wullix.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+    	"php": ">=5.3"
+    },
+    "require-dev": {
+    	"simpletest/simpletest": "dev-master"
+    },
+    "repositories": [
+		{
+            "type": "vcs",
+            "url": "http://svn.wullix.com/svn/WullixFramework",
+            "svn-cache-credentials": false
+        }         
+    ],
+	"autoload": {
+        "psr-0": {
+        	"Wullix\\": "src"
+        },
+        "classmap": ["src"],
+        "files123": ["../class/Autoload.class.php"]
+    },
+    "autoload-dev": {
+    }
+}
